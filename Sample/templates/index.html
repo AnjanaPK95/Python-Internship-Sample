@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/login.css">
+    <title>Sample</title>
+</head>
+<body>
+    <form action="/dashboard" method="post">
+        <div class="content" >
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username"  name="username" required>
+                <br>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password"  name="password" required><br>
+            </div>
+            <button type="submit" class="button">Login</button> 
+            {{msg}}
+            <div class="register-link">
+                <p>Don't have an account? <a href="register">Register</a></p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
